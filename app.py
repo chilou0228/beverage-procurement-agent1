@@ -812,7 +812,7 @@ elif current_page == "促销测算":
         with left:
             section("设置促销参数", "模型仅做静态毛利测算")
             st.markdown(f"<div class='panel'><div style='font-size:11px;color:#929AA5'>商品档案</div><div style='font-size:16px;font-weight:800;color:#2B313A;margin:5px 0 12px'>{html.escape(str(pr.get('product_name',sku)))}</div><div style='display:flex;justify-content:space-between;padding:8px 0;border-top:1px solid #F0F2F5'><span style='font-size:11px;color:#89929D'>日常售价</span><b>{money(original_price)}</b></div><div style='display:flex;justify-content:space-between;padding:8px 0;border-top:1px solid #F0F2F5'><span style='font-size:11px;color:#89929D'>采购成本</span><b>{money(cost)}</b></div></div>", unsafe_allow_html=True)
-            discount = st.slider("促销折扣", min_value=0.50, max_value=1.00, value=0.90, step=0.01, format="%.0f%%")
+            discount = st.slider("促销折扣", min_value=50, max_value=100, value=90, step=1, format="%d%%",help="90%表示售价为原价的9折,80%表示售价为原价的8折")
             quantity = st.number_input("预计促销销量（件）", min_value=1, max_value=1_000_000, value=100, step=10)
             days = st.number_input("活动持续天数", min_value=1, max_value=90, value=7, step=1)
         promo_price = original_price * discount
