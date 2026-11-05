@@ -1,0 +1,175 @@
+
+# 酒水品类经营规则
+# 以下数值均为项目模拟参数，不代表真实平台经营数据
+
+business_rules:
+
+  CAT01:
+    category_name: "白酒"
+    price_range_yuan: [39, 2999]
+    purchase_cost_ratio: [0.55, 0.80]
+    lead_time_days: [3, 15]
+    seasonal_peak:
+      - "春节"
+      - "中秋"
+      - "国庆"
+    attributes:
+      - "香型"
+      - "酒精度"
+      - "年份"
+      - "包装类型"
+      - "产地"
+    shelf_life_policy: "根据商品标签及储存要求管理，不统一设定到期日"
+
+  CAT02:
+    category_name: "葡萄酒"
+    price_range_yuan: [49, 1999]
+    purchase_cost_ratio: [0.50, 0.75]
+    lead_time_days: [7, 45]
+    seasonal_peak:
+      - "春节"
+      - "情人节"
+      - "圣诞节"
+    attributes:
+      - "葡萄品种"
+      - "产区"
+      - "年份"
+      - "酒型"
+      - "进口属性"
+    shelf_life_policy: "按具体商品标签、年份及储存要求管理"
+
+  CAT03:
+    category_name: "洋酒"
+    price_range_yuan: [69, 3999]
+    purchase_cost_ratio: [0.50, 0.78]
+    lead_time_days: [7, 60]
+    seasonal_peak:
+      - "春节"
+      - "圣诞节"
+      - "年末聚会"
+    attributes:
+      - "酒种"
+      - "产地"
+      - "酒龄"
+      - "酒精度"
+      - "包装类型"
+    shelf_life_policy: "根据商品属性及储存要求管理"
+
+  CAT04:
+    category_name: "啤酒"
+    price_range_yuan: [3, 299]
+    purchase_cost_ratio: [0.55, 0.80]
+    lead_time_days: [1, 10]
+    seasonal_peak:
+      - "夏季"
+      - "世界杯等大型体育赛事"
+      - "国庆"
+    attributes:
+      - "工艺类型"
+      - "麦芽类型"
+      - "酒精度"
+      - "包装类型"
+      - "进口属性"
+    shelf_life_policy: "重点记录生产日期、保质期和批次"
+
+  CAT05:
+    category_name: "黄酒"
+    price_range_yuan: [19, 599]
+    purchase_cost_ratio: [0.50, 0.78]
+    lead_time_days: [3, 20]
+    seasonal_peak:
+      - "春节"
+      - "中秋"
+      - "冬季"
+    attributes:
+      - "黄酒类型"
+      - "年份"
+      - "酒精度"
+      - "产地"
+      - "包装类型"
+    shelf_life_policy: "根据商品类型、包装及标签要求管理"
+
+  CAT06:
+    category_name: "养生酒/保健酒"
+    price_range_yuan: [39, 999]
+    purchase_cost_ratio: [0.50, 0.78]
+    lead_time_days: [3, 25]
+    seasonal_peak:
+      - "春节"
+      - "中秋"
+      - "年末"
+    attributes:
+      - "产品类型"
+      - "酒精度"
+      - "包装类型"
+      - "产品资质"
+      - "产地"
+    shelf_life_policy: "重点管理商品标签、批次和有效期，不虚构保健或治疗功效"
+
+  CAT07:
+    category_name: "清酒/烧酒"
+    price_range_yuan: [29, 1299]
+    purchase_cost_ratio: [0.50, 0.78]
+    lead_time_days: [7, 45]
+    seasonal_peak:
+      - "春节"
+      - "夏季聚会"
+      - "年末"
+    attributes:
+      - "酒种"
+      - "产地"
+      - "酒精度"
+      - "原料"
+      - "进口属性"
+    shelf_life_policy: "按商品标签和储存条件管理"
+
+  CAT08:
+    category_name: "果酒/米酒"
+    price_range_yuan: [15, 399]
+    purchase_cost_ratio: [0.45, 0.75]
+    lead_time_days: [2, 20]
+    seasonal_peak:
+      - "春季"
+      - "夏季"
+      - "节日聚会"
+    attributes:
+      - "水果种类"
+      - "口味"
+      - "酒精度"
+      - "包装类型"
+      - "产地"
+    shelf_life_policy: "重点管理批次、生产日期和保质期"
+
+  CAT09:
+    category_name: "鸡尾酒/预调酒"
+    price_range_yuan: [5, 199]
+    purchase_cost_ratio: [0.45, 0.75]
+    lead_time_days: [2, 15]
+    seasonal_peak:
+      - "夏季"
+      - "节假日"
+      - "年末聚会"
+    attributes:
+      - "口味"
+      - "酒精度"
+      - "包装类型"
+      - "容量"
+      - "品牌"
+    shelf_life_policy: "重点管理批次和保质期"
+
+  CAT10:
+    category_name: "其他酒类"
+    price_range_yuan: [15, 999]
+    purchase_cost_ratio: [0.45, 0.80]
+    lead_time_days: [3, 30]
+    seasonal_peak:
+      - "春节"
+      - "中秋"
+      - "地方特色节庆"
+    attributes:
+      - "酒种"
+      - "产地"
+      - "酒精度"
+      - "包装类型"
+      - "品牌"
+    shelf_life_policy: "根据具体商品属性和标签要求管理"
