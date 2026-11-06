@@ -845,11 +845,11 @@ python scripts/check_database.py
 
 **在线体验：**
 
-[点击访问酒水采销决策辅助系统 Demo](https://在这里填写你实际部署的Streamlit网址)
+[点击访问酒水采销决策辅助系统 Demo]( https://beverage-procurement-agent1-ajheomzmkwq97v8hgtybls.streamlit.app/)
 
 **GitHub 源码：**
 
-[点击查看项目代码](https://github.com/你的GitHub用户名/beverage-procurement-agent)
+[点击查看项目代码](https://github.com/chilou0228/beverage-procurement-agent1)
 
 Demo 主要用于展示：
 
